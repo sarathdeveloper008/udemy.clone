@@ -45,6 +45,11 @@ body{font-family: 'Gabarito', sans-serif;
         gap:10px;
         align-items: center;
      }
+     .navbar__s4{  
+        display: none;
+     }
+
+
 
      .Mylearning{position:relative;
                 cursor: pointer;
@@ -134,7 +139,7 @@ body{font-family: 'Gabarito', sans-serif;
         }
         
 
-    }
+    
 
     .recommended{ padding: 10px;}
 
@@ -149,7 +154,9 @@ body{font-family: 'Gabarito', sans-serif;
 
 
     .course-card{
-        width: 300px;
+        flex-grow: 1;
+        flex-basis:20%;
+        margin: 5px;
     }
     .course-card img{
         width: 100%;
@@ -213,4 +220,36 @@ body{font-family: 'Gabarito', sans-serif;
                 align-items: center;
             }
 
+            @media screen and (max-width: 800px)
+            { body{ font-size: 10%;
+
+            }
+            
+
+            }
+
+            @media screen and ( max-width: 600px)
+            {
+                .course-card{
+                    flex-basis:40%
+                }
+
+
+            }
+                
+            @media screen and (max-width: 600px)
+            {   .catagories{ display: none;}
+
+                
+            }
+            @media  screen and (max-width: 600px){
+              .navbar__s2,.navbar__s3 { display: none;}
+              .navbar__s4{
+                display: block;
+              } 
+            }
+                
+            
+
+                
             
